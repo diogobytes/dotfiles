@@ -34,7 +34,7 @@ bindsym XF86AudioMicMute exec --no-startup-id pactl set-source-mute @DEFAULT_SOU
 floating_modifier $mod
 
 # start a terminal
-bindsym $mod+Return exec urxvtc
+bindsym $mod+Return exec gnome-terminal
 
 # kill focused window
 bindsym $mod+Shift+q kill
@@ -195,8 +195,6 @@ bar {
     status_command i3status --config ~/.config/i3/i3status.conf
     # Disable all tray icons
     tray_output none
-
-    }
 }
 
 set $mode_display Config monitor resolution - Default config (d)
